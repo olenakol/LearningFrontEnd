@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <style>
+        @media(min-width:468px) {
+            .container-1 {
+                /*блоки стають в авто...ряд чи шо там треба*/
+                display: flex;
+                /*обрізає не заповнений простір
+          
+           align-items: flex-start;
+           align-items: flex-end;
+           align-items: center;
+           
+           
+           блоки стають колонкою вниз
+           flex-direction: column;
+           */
+            }
+
+            .container-2 {
+                display: flex;
+
+                /* Зсуває блоки куда треба
+            
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center; */
+                justify-content: space-between;
+            }
+
+            .container-3 {
+                display: flex;
+                /*Блоки не входять в шитину й переносяться нижче*/
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+
+        }
+
+        .container-1 div,
+        .container-2 div,
+        .container-3 div {
+            border: 1px #ccc solid;
+            padding: 10px;
+            margin: 2px;
+
+        }
+
+        .box-1 {
+            /* У блоків ширини по поділеним розділам */
+            flex: 2;
+            /* Блоки стають в заданому порядяку  */
+            order: 2;
+        }
+
+        .box-2 {
+            flex: 1;
+            order: 1;
+        }
+
+        .box-3 {
+            flex: 1;
+            order: 3;
+        }
+
+        .container-2-box {
+            /* width same ->*/
+            flex-basis: 28%;
+        }
+
+        .container-3-box {
+            /* width */
+            flex-basis: 25%;
+        }
+    </style>
+
+
+    <div class="container-1">
+        <div class="box-1">
+
+            <h3>Box One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, repudiandae?</p>
+        </div>
+        <div class="box-2">
+            <h3>Box Two</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, eaque?</p>
+        </div>
+        <div class="box-3">
+            <h3>Box Three</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, itaque.</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+        <div class="container-2-box">
+            <h3>Box Four</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae a amet consequatur quidem, eligendi est eaque!</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Five</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, non! ipsum dolor sit amet, consectetur adipisicing elit. Iste, nemo.</p>
+        </div>
+        <div class="container-2-box">
+            <h3>Box Six</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, voluptas. ipsum dolor sit amet, consectetur adipisicing elit. Iste, nemo.</p>
+        </div>
+    </div>
+
+
+    <div class="container-3">
+        <div class="container-3-box">
+            <h3>Box Seven</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dicta, eligendi, culpa omnis est pariatur, quia expedita, cumque vero temporibus iusto totam repellendus! Quas, pariatur.</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box Eight</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dicta, eligendi, culpa omnis est pariatur, quia expedita, cumque vero temporibus iusto totam repellendus! Quas, pariatur.</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box Nine</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dicta, eligendi, culpa omnis est pariatur, quia expedita, cumque vero temporibus iusto totam repellendus! Quas, pariatur.</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box Ten</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dicta, eligendi, culpa omnis est pariatur, quia expedita, cumque vero temporibus iusto totam repellendus! Quas, pariatur.</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box Eleven</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dicta, eligendi, culpa omnis est pariatur, quia expedita, cumque vero temporibus iusto totam repellendus! Quas, pariatur.</p>
+        </div>
+        <div class="container-3-box">
+            <h3>Box Twelve</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dicta, eligendi, culpa omnis est pariatur, quia expedita, cumque vero temporibus iusto totam repellendus! Quas, pariatur.</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>

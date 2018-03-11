@@ -1,0 +1,19 @@
+.home{
+    background: yellow;
+}
+.page1{
+   background: lightyellow;
+}
+.page2{
+    background: lightblue;
+}
+.page3{
+    background: lightpink;
+}
+body{
+    font-family: arial;
+}
+thead{
+    text-align: center;
+    
+}
