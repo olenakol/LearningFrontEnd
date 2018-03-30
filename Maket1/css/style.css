@@ -1,0 +1,996 @@
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	height: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul > li {
+	list-style: none;
+	text-align: center;
+	font-family: "Segoe UI";
+}
+
+/* ФОН ШАПКИ + СЛАЙДЕРА */
+
+.fone {
+
+	background: url(/img/backgroundLines.png) no-repeat;
+	background-size: 100%;
+	height: 750px;
+}
+
+
+
+
+.header {
+	display: flex;
+	padding: 20px 9%;
+	justify-content: space-between;
+	font-family: "Segoe UI";
+	font-size: 12pt;
+	margin-bottom: 100px;
+}
+
+
+
+/* ОФОРМЛЕННЯ МЕНЮ */
+
+.header-navbar {
+	clear: both;
+	float: right;
+}
+
+.menu-info > li {
+	margin-left: 30px;
+
+}
+
+.menu-main > li {
+	padding: 10px 12px;
+	margin-top: 30px;
+	font-family: "Segoe UI";
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.mini-menu > ul.color-info-menu > li > a:hover,
+.mini-menu > ul.color-main-menu > li > a:hover {
+	color: #252526;
+}
+
+.mini-menu > ul.color-info-menu > li > a {
+	color: #717274;
+}
+
+.mini-menu > ul.color-main-menu > li > a {
+	color: #3a2020;
+}
+
+.menu-main > .by {
+	background: #f6f6f6;
+	padding-right: 35px;
+	text-transform: lowercase;
+}
+
+
+/* ПОЛЕ ВИПАДАЮЧОГО МЕНЮ (АКАРДІОН)*/
+
+.mini-menu .sub ul {
+	display: none;
+	overflow: hidden;
+
+}
+
+.coolMenu,
+.coolMenu ul {
+	list-style: none;
+}
+
+.coolMenu {
+	float: left;
+}
+
+.coolMenu > li {
+	float: left;
+}
+
+.coolMenu li a {
+	display: block;
+	text-decoration: none;
+}
+
+.coolMenu ul li:hover {
+	color: #f6303e;
+}
+
+.coolMenu ul {
+	border-radius: 10px;
+	background: #fff;
+	position: absolute;
+	display: none;
+	z-index: 999;
+}
+
+.coolMenu li:hover ul {
+	display: block;
+}
+
+
+
+/* ЗНАКИ БІЛЯ ПУНКТІВ МЕНЮ*/
+
+.dot-number {
+	border-bottom: 2.5px dotted #b8b8b9;
+}
+
+.menu-info > li,
+.menu-main > li {
+	float: left;
+}
+
+ul.menu-main > li.arrow-down > a:after,
+ul.menu-info > li.arrow-down > a:after {
+	content: url(/img/hDown.png);
+}
+
+ul.menu-info > li.search > a:after {
+	content: url(/img/hSearch.png);
+}
+
+ul.menu-info > li.manu-language > a:before {
+	content: url(/img/hWorld.png);
+}
+
+ul.menu-info > li.manu-profile > a:before {
+	content: url(/img/hProfile.png);
+}
+
+ul.menu-main > li.by > a:before {
+	content: url(/img/careta.png);
+}
+
+/* ХОВАЄМ ВИПЛИВАЮЧЕ МЕНЮ */
+
+.sidebar a {
+	display: none;
+}
+
+.side-nav {
+	display: none;
+}
+
+.side-nav .btn-close {
+	display: none;
+}
+
+.small-menu {
+	display: none;
+}
+
+/* СЛАЙДЕР */
+
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* приховуєм контент */
+
+.mySlides {
+	display: none;
+	position: relative;
+}
+
+.dot-pocition {
+	margin: 150px 0 0 0;
+}
+
+.dot {
+
+	height: 4px;
+	width: 20px;
+	margin: 0 2px;
+	background-color: #999;
+	display: flow-root;
+	margin-bottom: 20px;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #d60202;
+	width: 40px;
+	height: 5px;
+}
+
+/* Fading animation */
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.scroller .item img {
+	float: left;
+	margin-left: 80px;
+}
+
+.scroller .slide-content {
+	float: left;
+	margin-left: 0%;
+}
+
+.scroller .slider-title {
+	color: #f6303e;
+	font-family: "DINPro" bold;
+	font-size: 36px;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
+
+.scroller p {
+	font-family: "Segoe UI";
+	color: #8da5ba;
+	font-size: 14px;
+	width: 330px;
+	line-height: 20px;
+	margin-top: 60px;
+	text-align: left;
+}
+
+.scroller .slide-smoler {
+	display: none;
+}
+
+.scroller .btn-more {
+	display: inline-block;
+	float: left;
+	margin-top: 60px;
+	padding: 20.3px 38px;
+	background: linear-gradient(to right, #1b1b1b, #453f3f);
+	color: #ffffff;
+	text-transform: uppercase;
+	font-style: "DINPro", medium;
+	font-size: 14px;
+}
+
+
+/* ТІЛО СЛАЙДЕРА*/
+
+.slide-content {
+	float: left;
+	margin-left: 24%;
+}
+
+.amazingcarousel-item .slider-title {
+	color: #f6303e;
+	font-family: "DINPro" bold;
+	font-size: 36px;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+
+}
+
+.amazingcarousel-item p {
+
+	font-family: "Segoe UI";
+	color: #8da5ba;
+	font-size: 14px;
+	width: 330px;
+	line-height: 20px;
+	margin-top: 60px;
+	text-align: left;
+}
+
+.amazingcarousel-item img {
+	float: left;
+	margin-left: 50px;
+}
+
+.amazingcarousel-item .slide-smoler {
+	display: none;
+}
+
+.amazingcarousel-item .slide-smoler-up {
+	display: none;
+}
+
+.amazingcarousel-item .btn-more {
+	display: inline-block;
+	float: left;
+	margin-top: 60px;
+	padding: 20.3px 38px;
+	background: linear-gradient(to right, #1b1b1b, #453f3f);
+	color: #ffffff;
+	text-transform: uppercase;
+	font-style: "DINPro", medium;
+	font-size: 14px;
+}
+
+.amazingcarousel-item .btn-more:hover {
+	background: linear-gradient(to right, #453f3f, #1b1b1b);
+}
+
+.amazingcarousel-item .btn-more:after {
+	content: url(/img/btn-arrow.png);
+}
+
+/* ФОРМА РЕЄСТАЦІЇ */
+
+.contact {
+	margin-top: 125px;
+	width: 950px;
+	text-align: center;
+	background: linear-gradient(to right, #fbfbfb, #dcdcdc);
+}
+
+
+.contact h3 {
+	/*font-family: "DINPro" bold;*/
+	font-family: "DINPro";
+	font-size: 30px;
+	color: #202945;
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+
+.contact form p {
+	margin: 0;
+}
+
+form {
+	margin-left: 11%;
+	text-align: center;
+}
+
+.layer1 {
+	float: left;
+	margin-left: 6px;
+	text-align: center;
+}
+
+.layer2 {
+	float: left;
+	text-align: center;
+}
+
+.contact form input {
+	margin: 25px 15px 0 15px;
+	width: 310px;
+	padding: 11px 19px;
+	border: 1px solid #b0bec1;
+}
+
+
+.contact form .calendar input {
+	margin: 25px 10px 0 0px;
+	width: 290px;
+	padding: 11px 14px;
+	border: 1px solid #b0bec1;
+}
+
+.full input {
+	margin: 26px 0 0 30px;
+	padding: 11px 19px;
+	width: 689px;
+	border: 1px solid #b0bec1;
+	color: #717274;
+}
+
+
+.contact form select {
+	margin: 25px 15px 0px 15px;
+	width: 348px;
+	padding: 10px 18px;
+	border: 1px solid #b0bec1;
+	color: #717274;
+}
+
+
+
+.contact form select > option {
+	color: #212121;
+}
+
+.send {
+	margin-bottom: 30px;
+	margin-top: 60px;
+	font-family: "Segoe UI";
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	padding: 13px 30px;
+	background: #f6303e;
+	border: 0 0 2px 2px;
+	text-transform: uppercase;
+
+}
+
+.send:hover,
+.contact button:focus {
+	background: #C70039;
+	color: #fff;
+	outline: 0;
+	transition: background-color 0.5s ease-out;
+}
+
+/* КОНТEНТ */
+
+
+.content {
+	margin: 40px 15% 125px 15%;
+	text-align: center;
+	
+
+}
+
+
+.content-header {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.content-header > h2 {
+	/*font-family: "DINPro" bold;*/
+	font-family: "DINPro";
+	font-weight: bold;
+	font-size: 30px;
+	color: #202945;
+	text-transform: uppercase;
+	margin-bottom: 14px;
+
+}
+
+.content-header > ul > li > a {
+	font-family: "Proxima Nova" thin;
+	font-size: 14px;
+	color: #d60202;
+	text-align: center;
+	margin-right: 35px;
+	
+
+}
+.content-header > ul > li > a:hover{
+	color: #8da5ba;
+}
+
+.grid-img {
+	 position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 315px;
+	width: 255px;
+	margin-bottom: 45px;
+}
+
+.grid-item {
+	 position: relative;
+	text-align: center;
+	float: left;
+	
+	margin-left: 25px;
+
+}
+.grid-title{
+	margin-bottom: 18px;
+}
+.grid-count {
+
+	text-align: left;
+}
+
+.grid-count > h3 {
+	font-size: 16px;
+	color: #212121;
+	font-family: "DINPro";
+}
+
+.grid-count > p {
+	width: 255px;
+	font-size: 14px;
+	color: #8da5ba;
+	font-family: "Segoe UI", Semilight;
+	line-height: 1.6;
+
+}
+/* ЗНАК АКЦІЇ*/
+
+.grid-img .sale{
+    position: absolute; top: 15px; right: 15px;
+}
+
+/* ДЕТІ ПРИ НАВЕДЕННІ НА ТОВАР*/
+
+.block-hidden{    
+    display: none;
+}
+
+.grid-count > h3:hover {
+	color: #dc2f2f;
+}
+
+.grid-item:hover .block-hidden {
+	width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute; top: 0; left: 0;
+    background: rgba(0,0,0,0.7);
+}
+
+
+.block-hidden .btn-by{
+    position: absolute; 
+	top: 80px; 
+	left: 48px;    
+}
+
+.block-hidden .btn-by >a:before {
+	content: url(/img/btn-cart.png);
+}
+
+.block-hidden .btn-by >a:hover{
+	transition: 0.1s;
+	border: 1px solid #fff;
+}
+.block-hidden .btn-by >a{
+	background: #f6303e;
+	padding: 15px 62px 15px 36px;
+	text-transform: uppercase;
+	font-family: "Segoe UI";
+	font-size: 14px;
+	color: #fff;
+}
+
+
+.block-hidden .btn-info{
+    position: absolute; 
+	top: 147px; 
+	left: 48px;    
+}
+
+.block-hidden .btn-info >a:before {
+	content: url(/img/btn-info.png);
+}
+
+
+
+.block-hidden .btn-info >a:hover{
+	transition: 0.1s;
+	border: 1px solid #f6303e;
+}
+
+.block-hidden .btn-info >a{
+   	padding: 15px 36px;
+	text-transform: uppercase;
+	font-family: "Segoe UI";
+	font-size: 14px;
+	color: #fff;
+	border: 1px solid #fff;
+}
+.block-hidden .price-old{
+    position: absolute; 
+	bottom: 50px; 
+	left: 48px;    
+}
+
+.block-hidden .price-old >a{
+   text-decoration:line-through;
+	font-family: "Din Pro";
+	font-size: 16px;
+	color: #f6303e;
+}
+.block-hidden .price-new{
+    position: absolute; 
+	bottom: 24px; 
+	left: 48px;    
+}
+
+.block-hidden .price-new >a{
+   
+	font-family: "Din Pro";
+	font-size: 20px;
+	color: #fff;
+}
+
+/* ФУТЕР */
+
+.footer-text-left {
+	font-family: "Segoe UI";
+	font-size: 14px;
+	color: #f6303e;
+	margin: 0 0 30px 130px;
+	float: left;
+}
+
+.footer-text-right .lit > label:after {
+	content: url(/img/neadGarbage.png);
+}
+
+.footer-text-right {
+	margin: 135px 130px 30px 0;
+	text-align: right;
+}
+
+.footer-text-right a {
+	font-family: "Segoe UI";
+	font-size: 14px;
+	color: #3f5b69;
+}
+
+.footer-text-right .lit > a:after {
+	content: url(/img/footerPart.png);
+}
+
+.btn-up {
+	float: right;
+	margin: 0 135px 0 0;
+	box-shadow: 5px 8px 20px 1px rgba(0, 0, 0, .1);
+	padding: 17px;
+}
+
+.btn-up:hover {
+	background: #f6f6f6;
+	transition: 0.25s;
+}
+
+
+
+
+@media(max-width: 757px) {
+	.mini-menu {
+		display: none;
+	}
+	.small-menu > a.search-mini:after {
+		content: url(/img/caret_zero.png);
+		padding-left: 25px;
+	}
+
+
+	.slide-content {
+		margin-left: 4%;
+	}
+	.amazingcarousel-item .slider-title {
+		margin-bottom: 0px;
+
+	}
+
+	.amazingcarousel-item p {
+
+		margin-top: 24px;
+		text-align: left;
+	}
+	.amazingcarousel-item img {
+		display: inline;
+		margin-left: 15%
+	}
+	.amazingcarousel-item .slide-smoler {
+		display: block;
+		margin: 15px 0 0 35%;
+		clear: both;
+	}
+
+	.amazingcarousel-item .slide-big {
+		display: none;
+	}
+	.amazingcarousel-item .slide-smler-up {
+		display: block;
+	}
+
+	.amazingcarousel-item .btn-more {
+		display: block;
+		float: ignore;
+		margin-top: 20px;
+		margin-left: 70px;
+		padding: 20.3px 38px;
+
+	}
+
+}
+
+@media(max-width: 839px) {
+	.logo {
+		display: none;
+	}
+
+	.header-section {
+		margin: 0
+	}
+
+
+}
+
+
+@media(max-width: 850px) {
+	.header {
+		margin: 0;
+	}
+	.sidebar a {
+		display: none;
+	}
+	.side-nav {
+		display: none;
+	}
+	.side-nav .btn-close {
+		display: none;
+	}
+	.small-menu {
+		display: block;
+		margin: 0;
+		padding: ;
+
+	}
+
+	.small-menu > a.caret:after {
+		content: url(/img/caret_zero.png);
+		padding-left: 25px;
+	}
+
+
+	.slide-smoler {
+		display: none;
+	}
+
+	.slide-smoler-up {
+		display: visible;
+	}
+
+	/* СЛАЙДЕР ВДСТУП*/
+	.slide-content {
+		margin-left: 0%;
+	}
+
+	.amazingcarousel-item img {
+		margin-left: 0px;
+	}
+	/* ФУТЕР */
+	.footer-text-right {
+		clear: both;
+	}
+
+	.footer-text-right label {
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer-text-left {
+		margin: 0 0 10px 0;
+		padding-left: 20px;
+	}
+	.footer-text-right {
+		margin: 135px 0px 30px 0;
+		text-align: center;
+	}
+
+	.footer-text-right a {
+		width: 100%;
+		text-align: center;
+		padding-left: 0px;
+	}
+	.btn-up {
+		float: right;
+		margin: 35px 15px 0 0;
+	}
+
+
+}
+
+
+
+
+
+@media(max-width: 990px) {
+
+	/* СЛАЙДЕР ВДСТУП*/
+	.slide-content {
+		margin-left: 10%;
+	}
+
+	/* 	ФОРМА РЕЄСТРАЦІЇ */
+	.contact {
+		margin-top: 70px;
+		width: 100%;
+		height: auto;
+	}
+	form {
+		margin-left: 0;
+	}
+
+	.contact h3 {
+		font-size: 26px;
+		padding-top: 40px;
+		padding-bottom: 30px;
+		text-align: center;
+		display: inline-block
+	}
+
+	.del {
+		display: none;
+	}
+	.contact form select {
+		display: none;
+	}
+	.layer1,
+	.layer2 {
+		display: inline-block;
+		float: none;
+		width: 100%;
+		margin: 0px;
+	}
+
+	.contact form input {
+		margin: 0;
+		width: 88%;
+		padding: 11px 19px;
+		border: 1px solid #b0bec1;
+		margin-bottom: 27px;
+	}
+
+
+	.contact form .calendar input {
+		margin: 25px 10px 0 0px;
+		width: 290px;
+		padding: 11px 14px;
+		border: 1px solid #b0bec1;
+	}
+
+	.full input {
+		margin: 0;
+		padding: 11px;
+		width: 90%;
+		border: 1px solid #b0bec1;
+		color: #717274;
+	}
+
+	.send {
+		margin-top: 36px;
+		margin-bottom: 50px;
+		padding: 13px;
+		width: 92%;
+
+	}
+
+	.btn-up {
+		float: right;
+		margin: 35px 15px 0 0;
+	}
+
+}
+
+@media(max-width: 1220px) {
+
+
+	.menu-info > li {
+		margin-left: 30px;
+
+	}
+
+	.menu-main > li {
+		display: none;
+	}
+
+	/* ВИПАДАЮЧЕ МЕНЮ */
+	.sidebar a {
+		float: right;
+		display: block;
+		color: #f2f2f2;
+		text-align: center;
+		text-decoration: none;
+		padding: 14px 0px 0 15px;
+		font-size: 17px;
+	}
+
+
+	.side-nav {
+		overflow: hidden;
+		display: block;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 100px;
+		right: 15%;
+		background-color: #111;
+		opacity: 0.9;
+		overflow-x: hidden;
+		padding-top: 60px;
+		transition: 0.5s;
+	}
+
+	.side-nav a {
+		padding: 10px 10px 10px 30px;
+		text-decoration: none;
+		font-size: 22px;
+		color: #ccc;
+		display: block;
+		transition: 0.3s;
+	}
+
+	.side-nav a:hover {
+		color: #fff;
+	}
+
+	.side-nav .btn-close {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 120px;
+		font-size: 36px;
+		margin-left: 50px;
+
+	}
+
+	/* БIЧНИЙ АКАРДЕОН */
+	.accordion .title_block {
+		margin: 5px;
+		font-weight: 400;
+		font-size: 18px;
+		color: #eee;
+		cursor: pointer;
+		background: red;
+		padding: 10px;
+		-webkit-transition: all .1s linear 0;
+		-webkit-transition-delay: .1s 0;
+		transition: all .2s linear 0
+	}
+	.accordion .info {
+		display: none;
+		margin: 3px;
+		padding: 1px 0 1px 15px;
+		background: #fff
+	}
+
+	ul.menu-info > li.careta > a:after {
+		content: url(/img/caret_zero.png);
+	}
+
+
+	.btn-up {
+		float: right;
+		margin: 35px 15px 0 0;
+	}
+
+}
